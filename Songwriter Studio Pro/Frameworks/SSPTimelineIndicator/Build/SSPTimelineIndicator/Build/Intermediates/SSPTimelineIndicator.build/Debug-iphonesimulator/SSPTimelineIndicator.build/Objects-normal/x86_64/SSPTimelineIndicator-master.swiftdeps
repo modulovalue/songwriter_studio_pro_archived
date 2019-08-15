@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "668ef9990c10cdfb9dbb9e8fcc291601"
+build_time: [544303444, 838792000]
+inputs:
+  "/Users/valauskasmodestas/Desktop/SSPTimelineIndicator/SSPTimelineIndicator/SSPTimelineIndicator.swift": !dirty [544303444, 0]

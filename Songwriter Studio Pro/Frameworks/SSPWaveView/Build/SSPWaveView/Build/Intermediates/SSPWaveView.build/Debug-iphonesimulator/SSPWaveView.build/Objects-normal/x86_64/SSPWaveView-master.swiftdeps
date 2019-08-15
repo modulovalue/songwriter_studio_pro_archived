@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "f3ac5ab18685dc5ed9c6c4ac89d50d29"
+build_time: [544292710, 381289000]
+inputs:
+  "/Users/valauskasmodestas/Desktop/SSPWaveView/SSPWaveView/SSPWaveViewDataSource.swift": [544292572, 0]
+  "/Users/valauskasmodestas/Desktop/SSPWaveView/SSPWaveView/SSPWaveView.swift": [544292572, 0]
+  "/Users/valauskasmodestas/Desktop/SSPWaveView/SSPWaveView/SSPBand.swift": [544292304, 0]
+  "/Users/valauskasmodestas/Desktop/SSPWaveView/SSPWaveView/SSPWaveViewDelegate.swift": [544292266, 0]

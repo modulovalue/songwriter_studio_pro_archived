@@ -1,0 +1,75 @@
+disabled_rules: # rule identifiers to exclude from running
+  - prohibited_super_call
+  - cyclomatic_complexity
+  - trailing_whitespace
+  - force_cast
+  - vertical_whitespace
+  - redundant_discardable_let
+  - number_separator
+  - function_body_length
+  - identifier_name
+  - for_where
+opt_in_rules: # some rules are only opt-in
+  - closure_spacing
+  - conditional_returns_on_newline
+  - empty_count
+  - explicit_init
+  - first_where
+  - nimble_operator
+  - operator_usage_whitespace 
+  - redundant_nil_coalescing
+  - switch_case_on_newline 
+  #- attributes
+  - explicit_init
+  - number_separator
+  - valid_docs
+  #- sorted_imports
+  - prohibited_super_call
+ #    CHANGE 
+ # - private_outlet 
+  - overridden_super_call 
+  - object_literal 
+  - fatal_error_message 
+  # - explicit_type_interface
+  - closure_end_indentation
+  # - missing_docs
+
+  
+  # Find all the available rules by running:
+  # swiftlint rules
+ # paths to ignore during linting. overridden by `included`.
+# excluded:
+ # - Carthage
+#  - Pods
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length: 200
+# they can set both implicitly with an array
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# or they can set both explicitly
+file_length:
+  warning: 500
+  error: 1200
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 1 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded: iPhone # excluded via string
+identifier_name:
+  min_length: # only min_length
+    error: 1 # only error
+  excluded: # excluded via string array
+    - id
+    - URL
+    - GlobalAPIKey
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)

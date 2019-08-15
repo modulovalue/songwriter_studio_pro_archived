@@ -1,0 +1,10 @@
+framework module SSPTimelineIndicator {
+  umbrella header "SSPTimelineIndicator.h"
+
+  export *
+  module * { export * }
+}
+
+module SSPTimelineIndicator.Swift {
+    header "SSPTimelineIndicator-Swift.h"
+}

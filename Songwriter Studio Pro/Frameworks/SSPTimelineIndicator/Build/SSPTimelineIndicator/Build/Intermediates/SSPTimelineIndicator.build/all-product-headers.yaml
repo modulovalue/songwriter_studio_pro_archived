@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/valauskasmodestas/Desktop/SSPTimelineIndicator/Build/SSPTimelineIndicator/Build/Products/Debug-iphonesimulator/SSPTimelineIndicator.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SSPTimelineIndicator-Swift.h",
+          'external-contents': "/Users/valauskasmodestas/Desktop/SSPTimelineIndicator/Build/SSPTimelineIndicator/Build/Products/Debug-iphonesimulator/SSPTimelineIndicator.framework/Headers/SSPTimelineIndicator-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SSPTimelineIndicator.h",
+          'external-contents': "/Users/valauskasmodestas/Desktop/SSPTimelineIndicator/SSPTimelineIndicator/SSPTimelineIndicator.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/valauskasmodestas/Desktop/SSPTimelineIndicator/Build/SSPTimelineIndicator/Build/Products/Debug-iphonesimulator/SSPTimelineIndicator.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/valauskasmodestas/Desktop/SSPTimelineIndicator/Build/SSPTimelineIndicator/Build/Intermediates/SSPTimelineIndicator.build/Debug-iphonesimulator/SSPTimelineIndicator.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

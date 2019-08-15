@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19051CAB0FB68404CB6F7D22 /* Pods_SongwriterStudioPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC158B7A87CE54DA7BA82308 /* Pods_SongwriterStudioPro.framework */; };
+		46074BFF1EA2128B00AE4E74 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46074BFE1EA2128B00AE4E74 /* Accelerate.framework */; };
+		46074C031EA2129200AE4E74 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46074C021EA2129200AE4E74 /* CoreAudio.framework */; };
+		461061401FE83464002AF7C4 /* AppearanceTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610613F1FE83464002AF7C4 /* AppearanceTabController.swift */; };
+		461061421FE84BD2002AF7C4 /* ConvenienceTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461061411FE84BD2002AF7C4 /* ConvenienceTabController.swift */; };
+		461061441FE84DEB002AF7C4 /* SectionTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461061431FE84DEB002AF7C4 /* SectionTabController.swift */; };
+		461061461FE84E72002AF7C4 /* AudioTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461061451FE84E72002AF7C4 /* AudioTabController.swift */; };
+		461061481FE84E98002AF7C4 /* AboutTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461061471FE84E98002AF7C4 /* AboutTabController.swift */; };
+		461C8D9F1E9EC431000D0281 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461C8D9E1E9EC431000D0281 /* SettingsView.swift */; };
+		461DE30A1FE09D3F009BF4C7 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461DE3091FE09D3F009BF4C7 /* ShareViewController.swift */; };
+		46200B581E8BF69A00CBED64 /* ExecutionTimeMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46200B571E8BF69A00CBED64 /* ExecutionTimeMeasurement.swift */; };
+		4620C9881E95A0320074670A /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4620C9871E95A0320074670A /* Playlist.swift */; };
+		4620C9931E95C6560074670A /* Section.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4620C9921E95C6560074670A /* Section.xib */; };
+		4620C9991E95C70A0074670A /* SSPSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4620C9961E95C70A0074670A /* SSPSectionView.swift */; };
+		4621890B1E9ECDBE00656861 /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621890A1E9ECDBE00656861 /* SwiftyUserDefaults.swift */; };
+		4625D0C51E9184E000CC3490 /* AudioUnitsAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4625D0C41E9184E000CC3490 /* AudioUnitsAccess.m */; };
+		464081661E9247AE00E81A5E /* EdgeShadowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464081651E9247AE00E81A5E /* EdgeShadowLayer.swift */; };
+		46610C741E8D7BF100EF845E /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46610C731E8D7BF100EF845E /* GalleryView.swift */; };
+		467214601FE5D2A600B71A50 /* ProjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4672145F1FE5D2A600B71A50 /* ProjectData.swift */; };
+		467214631FE6040900B71A50 /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467214621FE6040900B71A50 /* ProjectManager.swift */; };
+		4683C5731FE087BF00A1CDF3 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4683C5721FE087BF00A1CDF3 /* GalleryCell.swift */; };
+		468488D51FDC746100EB78E7 /* OtherOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468488D41FDC746100EB78E7 /* OtherOptionsViewController.swift */; };
+		46849BA21E9855570016A1CD /* SETTINGS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46849BA11E9855570016A1CD /* SETTINGS.swift */; };
+		4685F7F41E995C9000446AA5 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685F7F31E995C9000446AA5 /* AudioManager.swift */; };
+		468A788F1E88BDFB003B1C3E /* MillisecondsToDatetimeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468A788E1E88BDFB003B1C3E /* MillisecondsToDatetimeString.swift */; };
+		46A06CD51E96B59B00943F0D /* SectionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A06CD41E96B59B00943F0D /* SectionArray.swift */; };
+		46A06CD71E96BB4500943F0D /* SSPPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A06CD61E96BB4500943F0D /* SSPPlayback.swift */; };
+		46A06CFB1E96E67F00943F0D /* MediumMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A06CF91E96E67F00943F0D /* MediumMenu.swift */; };
+		46B9045B1E82FCA90019D20A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B9045A1E82FCA90019D20A /* AppDelegate.swift */; };
+		46B904601E82FCA90019D20A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B9045E1E82FCA90019D20A /* Main.storyboard */; };
+		46B904651E82FCA90019D20A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B904631E82FCA90019D20A /* LaunchScreen.storyboard */; };
+		46B904891E82FE900019D20A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B904881E82FE900019D20A /* Images.xcassets */; };
+		46B904A01E82FF140019D20A /* UIScrollView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B9049F1E82FF140019D20A /* UIScrollView2.swift */; };
+		46B904A41E82FFC50019D20A /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B904A31E82FFC50019D20A /* MainScreen.swift */; };
+		46B904BA1E83003B0019D20A /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B904B81E83003B0019D20A /* RecordButton.swift */; };
+		46CB2EC91FE2B3CC0080DD8D /* SSPTimelineIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB2EC81FE2B3CC0080DD8D /* SSPTimelineIndicator.swift */; };
+		46CB2ECD1FE2B4190080DD8D /* SSPWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CB2ECC1FE2B4180080DD8D /* SSPWaveView.swift */; };
+		46D445B11E8CEDAC00253FE3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D445B01E8CEDAC00253FE3 /* NavigationController.swift */; };
+		46E6EE911EA312BA003B2BF2 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E6EE901EA312BA003B2BF2 /* FFT.swift */; };
+		46E6EE931EA3154D003B2BF2 /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E6EE921EA3154D003B2BF2 /* Arithmetic.swift */; };
+		46ED7C271E96EAE400576C70 /* SongwriterStudioProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED7C261E96EAE400576C70 /* SongwriterStudioProTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46ED7C291E96EAE400576C70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46B9044F1E82FCA90019D20A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46B904561E82FCA90019D20A;
+			remoteInfo = SongwriterStudioPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4625D0081E9179EB00CC3490 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46A06CE41E96DDBF00943F0D /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F10406DD0A2D1D9D9936309 /* Pods-SongwriterStudioPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongwriterStudioPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-SongwriterStudioPro/Pods-SongwriterStudioPro.release.xcconfig"; sourceTree = "<group>"; };
+		46074BFE1EA2128B00AE4E74 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		46074C021EA2129200AE4E74 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		4610613F1FE83464002AF7C4 /* AppearanceTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceTabController.swift; sourceTree = "<group>"; };
+		461061411FE84BD2002AF7C4 /* ConvenienceTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvenienceTabController.swift; sourceTree = "<group>"; };
+		461061431FE84DEB002AF7C4 /* SectionTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTabController.swift; sourceTree = "<group>"; };
+		461061451FE84E72002AF7C4 /* AudioTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTabController.swift; sourceTree = "<group>"; };
+		461061471FE84E98002AF7C4 /* AboutTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTabController.swift; sourceTree = "<group>"; };
+		461C8D9E1E9EC431000D0281 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		461DE3091FE09D3F009BF4C7 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		46200B571E8BF69A00CBED64 /* ExecutionTimeMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecutionTimeMeasurement.swift; sourceTree = "<group>"; };
+		4620C9871E95A0320074670A /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		4620C9921E95C6560074670A /* Section.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Section.xib; sourceTree = "<group>"; };
+		4620C9961E95C70A0074670A /* SSPSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSPSectionView.swift; sourceTree = "<group>"; };
+		4621890A1E9ECDBE00656861 /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaults.swift; sourceTree = "<group>"; };
+		4625D0C41E9184E000CC3490 /* AudioUnitsAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioUnitsAccess.m; sourceTree = "<group>"; };
+		464081651E9247AE00E81A5E /* EdgeShadowLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeShadowLayer.swift; sourceTree = "<group>"; };
+		46610C731E8D7BF100EF845E /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		4672145F1FE5D2A600B71A50 /* ProjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectData.swift; sourceTree = "<group>"; };
+		467214621FE6040900B71A50 /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
+		4683C5721FE087BF00A1CDF3 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		468488D41FDC746100EB78E7 /* OtherOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherOptionsViewController.swift; sourceTree = "<group>"; };
+		46849BA11E9855570016A1CD /* SETTINGS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SETTINGS.swift; sourceTree = "<group>"; };
+		468518891E83C10500AADF7D /* Songwriter Studio Pro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Songwriter Studio Pro-Bridging-Header.h"; sourceTree = "<group>"; };
+		4685F7F31E995C9000446AA5 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		468A788E1E88BDFB003B1C3E /* MillisecondsToDatetimeString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MillisecondsToDatetimeString.swift; sourceTree = "<group>"; };
+		46A06CD41E96B59B00943F0D /* SectionArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionArray.swift; sourceTree = "<group>"; };
+		46A06CD61E96BB4500943F0D /* SSPPlayback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSPPlayback.swift; sourceTree = "<group>"; };
+		46A06CF91E96E67F00943F0D /* MediumMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumMenu.swift; sourceTree = "<group>"; };
+		46B904571E82FCA90019D20A /* SongwriterStudioPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongwriterStudioPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B9045A1E82FCA90019D20A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46B9045F1E82FCA90019D20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46B904641E82FCA90019D20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46B904661E82FCA90019D20A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B904881E82FE900019D20A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46B9049F1E82FF140019D20A /* UIScrollView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView2.swift; sourceTree = "<group>"; };
+		46B904A31E82FFC50019D20A /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		46B904B81E83003B0019D20A /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		46CB2EC81FE2B3CC0080DD8D /* SSPTimelineIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSPTimelineIndicator.swift; sourceTree = "<group>"; };
+		46CB2ECC1FE2B4180080DD8D /* SSPWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSPWaveView.swift; sourceTree = "<group>"; };
+		46D445B01E8CEDAC00253FE3 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		46E6EE901EA312BA003B2BF2 /* FFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
+		46E6EE921EA3154D003B2BF2 /* Arithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arithmetic.swift; sourceTree = "<group>"; };
+		46ED7C241E96EAE400576C70 /* SongwriterStudioProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongwriterStudioProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46ED7C261E96EAE400576C70 /* SongwriterStudioProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongwriterStudioProTests.swift; sourceTree = "<group>"; };
+		46ED7C281E96EAE400576C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5668E587D6E2344739335FDB /* Pods-SongwriterStudioPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongwriterStudioPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SongwriterStudioPro/Pods-SongwriterStudioPro.debug.xcconfig"; sourceTree = "<group>"; };
+		98AD95F67781F48CEE431C56 /* Pods_SongwriterStudioProTests1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SongwriterStudioProTests1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD4CDE4420B0F0E38D72C2C /* Pods_SongwriterStudioProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SongwriterStudioProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC158B7A87CE54DA7BA82308 /* Pods_SongwriterStudioPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SongwriterStudioPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46B904541E82FCA90019D20A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46074C031EA2129200AE4E74 /* CoreAudio.framework in Frameworks */,
+				46074BFF1EA2128B00AE4E74 /* Accelerate.framework in Frameworks */,
+				19051CAB0FB68404CB6F7D22 /* Pods_SongwriterStudioPro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46ED7C211E96EAE400576C70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D080A1196BFD04B363F3200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46074C021EA2129200AE4E74 /* CoreAudio.framework */,
+				46074BFE1EA2128B00AE4E74 /* Accelerate.framework */,
+				98AD95F67781F48CEE431C56 /* Pods_SongwriterStudioProTests1.framework */,
+				EC158B7A87CE54DA7BA82308 /* Pods_SongwriterStudioPro.framework */,
+				DBD4CDE4420B0F0E38D72C2C /* Pods_SongwriterStudioProTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4610613E1FE83451002AF7C4 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				4610613F1FE83464002AF7C4 /* AppearanceTabController.swift */,
+				461061411FE84BD2002AF7C4 /* ConvenienceTabController.swift */,
+				461061431FE84DEB002AF7C4 /* SectionTabController.swift */,
+				461061451FE84E72002AF7C4 /* AudioTabController.swift */,
+				461061471FE84E98002AF7C4 /* AboutTabController.swift */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		4621890C1E9ECDC200656861 /* SwiftyUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				4621890A1E9ECDBE00656861 /* SwiftyUserDefaults.swift */,
+			);
+			name = SwiftyUserDefaults;
+			sourceTree = "<group>";
+		};
+		4621890D1E9ECDCC00656861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46E6EE921EA3154D003B2BF2 /* Arithmetic.swift */,
+				46E6EE901EA312BA003B2BF2 /* FFT.swift */,
+				4621890C1E9ECDC200656861 /* SwiftyUserDefaults */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4625D0C31E9184D500CC3490 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				4625D0C41E9184E000CC3490 /* AudioUnitsAccess.m */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		467214611FE5D30B00B71A50 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				46B9049F1E82FF140019D20A /* UIScrollView2.swift */,
+				46B904B81E83003B0019D20A /* RecordButton.swift */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		4683C56F1FE087A500A1CDF3 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				46610C731E8D7BF100EF845E /* GalleryView.swift */,
+				4683C5721FE087BF00A1CDF3 /* GalleryCell.swift */,
+			);
+			name = Gallery;
+			sourceTree = "<group>";
+		};
+		4685F7F21E98C08500446AA5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4620C9921E95C6560074670A /* Section.xib */,
+				46B9045E1E82FCA90019D20A /* Main.storyboard */,
+				46B904631E82FCA90019D20A /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		468A788D1E88BDE3003B1C3E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				468A788E1E88BDFB003B1C3E /* MillisecondsToDatetimeString.swift */,
+				46200B571E8BF69A00CBED64 /* ExecutionTimeMeasurement.swift */,
+				464081651E9247AE00E81A5E /* EdgeShadowLayer.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		46B077171E89942200652978 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46CB2EC01FE2A7660080DD8D /* Custom */,
+				46FEE2231FDD940900E754A8 /* VC */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		46B077191E89943200652978 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4620C9871E95A0320074670A /* Playlist.swift */,
+				46A06CD61E96BB4500943F0D /* SSPPlayback.swift */,
+				4685F7F31E995C9000446AA5 /* AudioManager.swift */,
+				46A06CD41E96B59B00943F0D /* SectionArray.swift */,
+				4672145F1FE5D2A600B71A50 /* ProjectData.swift */,
+				467214621FE6040900B71A50 /* ProjectManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		46B9044E1E82FCA90019D20A = {
+			isa = PBXGroup;
+			children = (
+				46B904591E82FCA90019D20A /* SongwriterStudioPro */,
+				46ED7C251E96EAE400576C70 /* SongwriterStudioProTests */,
+				46B904581E82FCA90019D20A /* Products */,
+				BE2FBF551A76AD2B96E4CB63 /* Pods */,
+				1D080A1196BFD04B363F3200 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46B904581E82FCA90019D20A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46B904571E82FCA90019D20A /* SongwriterStudioPro.app */,
+				46ED7C241E96EAE400576C70 /* SongwriterStudioProTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46B904591E82FCA90019D20A /* SongwriterStudioPro */ = {
+			isa = PBXGroup;
+			children = (
+				4621890D1E9ECDCC00656861 /* Frameworks */,
+				4625D0C31E9184D500CC3490 /* C */,
+				46B904C01E837CBA0019D20A /* Code */,
+				468A788D1E88BDE3003B1C3E /* Utilities */,
+				4685F7F21E98C08500446AA5 /* Storyboards */,
+				46B904BE1E837C820019D20A /* Standard Assets */,
+			);
+			name = SongwriterStudioPro;
+			path = "Songwriter Studio Pro";
+			sourceTree = "<group>";
+		};
+		46B904BE1E837C820019D20A /* Standard Assets */ = {
+			isa = PBXGroup;
+			children = (
+				46B9045A1E82FCA90019D20A /* AppDelegate.swift */,
+				468518891E83C10500AADF7D /* Songwriter Studio Pro-Bridging-Header.h */,
+				46B904881E82FE900019D20A /* Images.xcassets */,
+				46B904661E82FCA90019D20A /* Info.plist */,
+			);
+			name = "Standard Assets";
+			sourceTree = "<group>";
+		};
+		46B904C01E837CBA0019D20A /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				46849BA11E9855570016A1CD /* SETTINGS.swift */,
+				46B077171E89942200652978 /* Views */,
+				46B077191E89943200652978 /* Models */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		46CB2EB81FE2A69B0080DD8D /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				46D445B01E8CEDAC00253FE3 /* NavigationController.swift */,
+				46CB2EBB1FE2A6B20080DD8D /* Session */,
+				4683C56F1FE087A500A1CDF3 /* Gallery */,
+				46CB2EBD1FE2A6E30080DD8D /* Settings */,
+				46CB2EBE1FE2A6F00080DD8D /* Share */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		46CB2EBB1FE2A6B20080DD8D /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				46B904A31E82FFC50019D20A /* MainScreen.swift */,
+				467214611FE5D30B00B71A50 /* CustomViews */,
+				46CB2EBC1FE2A6C60080DD8D /* ProjectSettings */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		46CB2EBC1FE2A6C60080DD8D /* ProjectSettings */ = {
+			isa = PBXGroup;
+			children = (
+				468488D41FDC746100EB78E7 /* OtherOptionsViewController.swift */,
+			);
+			name = ProjectSettings;
+			sourceTree = "<group>";
+		};
+		46CB2EBD1FE2A6E30080DD8D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4610613E1FE83451002AF7C4 /* Tabs */,
+				461C8D9E1E9EC431000D0281 /* SettingsView.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		46CB2EBE1FE2A6F00080DD8D /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				461DE3091FE09D3F009BF4C7 /* ShareViewController.swift */,
+			);
+			name = Share;
+			sourceTree = "<group>";
+		};
+		46CB2EC01FE2A7660080DD8D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				46CB2ECC1FE2B4180080DD8D /* SSPWaveView.swift */,
+				46CB2EC81FE2B3CC0080DD8D /* SSPTimelineIndicator.swift */,
+				4620C9961E95C70A0074670A /* SSPSectionView.swift */,
+				46A06CF91E96E67F00943F0D /* MediumMenu.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		46ED7C251E96EAE400576C70 /* SongwriterStudioProTests */ = {
+			isa = PBXGroup;
+			children = (
+				46ED7C261E96EAE400576C70 /* SongwriterStudioProTests.swift */,
+				46ED7C281E96EAE400576C70 /* Info.plist */,
+			);
+			path = SongwriterStudioProTests;
+			sourceTree = "<group>";
+		};
+		46FEE2231FDD940900E754A8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				46CB2EB81FE2A69B0080DD8D /* Navigation */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		BE2FBF551A76AD2B96E4CB63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5668E587D6E2344739335FDB /* Pods-SongwriterStudioPro.debug.xcconfig */,
+				2F10406DD0A2D1D9D9936309 /* Pods-SongwriterStudioPro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46B904561E82FCA90019D20A /* SongwriterStudioPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B9047F1E82FCA90019D20A /* Build configuration list for PBXNativeTarget "SongwriterStudioPro" */;
+			buildPhases = (
+				5E101348A753CE950C17F5C6 /* [CP] Check Pods Manifest.lock */,
+				46B904531E82FCA90019D20A /* Sources */,
+				46B904541E82FCA90019D20A /* Frameworks */,
+				46B904551E82FCA90019D20A /* Resources */,
+				46B077581E89FC0800652978 /* ShellScript */,
+				4625D0081E9179EB00CC3490 /* Embed Frameworks */,
+				46A06CE41E96DDBF00943F0D /* Embed PlugIns */,
+				709F9BCC72C99EE1EAF31441 /* [CP] Embed Pods Frameworks */,
+				824121842B40A389F62BB1EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SongwriterStudioPro;
+			productName = "Songwriter Studio Pro";
+			productReference = 46B904571E82FCA90019D20A /* SongwriterStudioPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46ED7C231E96EAE400576C70 /* SongwriterStudioProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46ED7C2B1E96EAE400576C70 /* Build configuration list for PBXNativeTarget "SongwriterStudioProTests" */;
+			buildPhases = (
+				46ED7C201E96EAE400576C70 /* Sources */,
+				46ED7C211E96EAE400576C70 /* Frameworks */,
+				46ED7C221E96EAE400576C70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46ED7C2A1E96EAE400576C70 /* PBXTargetDependency */,
+			);
+			name = SongwriterStudioProTests;
+			productName = SongwriterStudioProTests;
+			productReference = 46ED7C241E96EAE400576C70 /* SongwriterStudioProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46B9044F1E82FCA90019D20A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = MV;
+				TargetAttributes = {
+					46B904561E82FCA90019D20A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N7342S7C7W;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					46ED7C231E96EAE400576C70 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = N7342S7C7W;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46B904561E82FCA90019D20A;
+					};
+				};
+			};
+			buildConfigurationList = 46B904521E82FCA90019D20A /* Build configuration list for PBXProject "SongwriterStudioPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46B9044E1E82FCA90019D20A;
+			productRefGroup = 46B904581E82FCA90019D20A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46B904561E82FCA90019D20A /* SongwriterStudioPro */,
+				46ED7C231E96EAE400576C70 /* SongwriterStudioProTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46B904551E82FCA90019D20A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B904651E82FCA90019D20A /* LaunchScreen.storyboard in Resources */,
+				4620C9931E95C6560074670A /* Section.xib in Resources */,
+				46B904891E82FE900019D20A /* Images.xcassets in Resources */,
+				46B904601E82FCA90019D20A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46ED7C221E96EAE400576C70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46B077581E89FC0800652978 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if which swiftlint >/dev/null; then\n#swiftlint\n#else\n#echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n#exit 1\n#fi";
+		};
+		5E101348A753CE950C17F5C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SongwriterStudioPro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		709F9BCC72C99EE1EAF31441 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SongwriterStudioPro/Pods-SongwriterStudioPro-frameworks.sh",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKit.framework",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
+				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SongwriterStudioPro/Pods-SongwriterStudioPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		824121842B40A389F62BB1EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SongwriterStudioPro/Pods-SongwriterStudioPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46B904531E82FCA90019D20A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461061481FE84E98002AF7C4 /* AboutTabController.swift in Sources */,
+				461061461FE84E72002AF7C4 /* AudioTabController.swift in Sources */,
+				461C8D9F1E9EC431000D0281 /* SettingsView.swift in Sources */,
+				46B904BA1E83003B0019D20A /* RecordButton.swift in Sources */,
+				46200B581E8BF69A00CBED64 /* ExecutionTimeMeasurement.swift in Sources */,
+				46849BA21E9855570016A1CD /* SETTINGS.swift in Sources */,
+				461DE30A1FE09D3F009BF4C7 /* ShareViewController.swift in Sources */,
+				467214631FE6040900B71A50 /* ProjectManager.swift in Sources */,
+				464081661E9247AE00E81A5E /* EdgeShadowLayer.swift in Sources */,
+				46B904A01E82FF140019D20A /* UIScrollView2.swift in Sources */,
+				4621890B1E9ECDBE00656861 /* SwiftyUserDefaults.swift in Sources */,
+				46B904A41E82FFC50019D20A /* MainScreen.swift in Sources */,
+				461061401FE83464002AF7C4 /* AppearanceTabController.swift in Sources */,
+				46E6EE931EA3154D003B2BF2 /* Arithmetic.swift in Sources */,
+				468A788F1E88BDFB003B1C3E /* MillisecondsToDatetimeString.swift in Sources */,
+				461061421FE84BD2002AF7C4 /* ConvenienceTabController.swift in Sources */,
+				4683C5731FE087BF00A1CDF3 /* GalleryCell.swift in Sources */,
+				4620C9881E95A0320074670A /* Playlist.swift in Sources */,
+				46CB2EC91FE2B3CC0080DD8D /* SSPTimelineIndicator.swift in Sources */,
+				46CB2ECD1FE2B4190080DD8D /* SSPWaveView.swift in Sources */,
+				46A06CFB1E96E67F00943F0D /* MediumMenu.swift in Sources */,
+				46E6EE911EA312BA003B2BF2 /* FFT.swift in Sources */,
+				4625D0C51E9184E000CC3490 /* AudioUnitsAccess.m in Sources */,
+				4620C9991E95C70A0074670A /* SSPSectionView.swift in Sources */,
+				468488D51FDC746100EB78E7 /* OtherOptionsViewController.swift in Sources */,
+				4685F7F41E995C9000446AA5 /* AudioManager.swift in Sources */,
+				461061441FE84DEB002AF7C4 /* SectionTabController.swift in Sources */,
+				46B9045B1E82FCA90019D20A /* AppDelegate.swift in Sources */,
+				46D445B11E8CEDAC00253FE3 /* NavigationController.swift in Sources */,
+				46A06CD71E96BB4500943F0D /* SSPPlayback.swift in Sources */,
+				46A06CD51E96B59B00943F0D /* SectionArray.swift in Sources */,
+				46610C741E8D7BF100EF845E /* GalleryView.swift in Sources */,
+				467214601FE5D2A600B71A50 /* ProjectData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46ED7C201E96EAE400576C70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46ED7C271E96EAE400576C70 /* SongwriterStudioProTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46ED7C2A1E96EAE400576C70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46B904561E82FCA90019D20A /* SongwriterStudioPro */;
+			targetProxy = 46ED7C291E96EAE400576C70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46B9045E1E82FCA90019D20A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46B9045F1E82FCA90019D20A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46B904631E82FCA90019D20A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46B904641E82FCA90019D20A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46B9047D1E82FCA90019D20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46B9047E1E82FCA90019D20A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46B904801E82FCA90019D20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5668E587D6E2344739335FDB /* Pods-SongwriterStudioPro.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N7342S7C7W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Songwriter\\ Studio\\ Pro",
+					"$(PROJECT_DIR)/Frameworks/SSPWaveView",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				INFOPLIST_FILE = "Songwriter Studio Pro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.modestasvalauskas.Songwriter-Studio-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Songwriter Studio Pro/Songwriter Studio Pro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		46B904811E82FCA90019D20A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F10406DD0A2D1D9D9936309 /* Pods-SongwriterStudioPro.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = N7342S7C7W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Songwriter\\ Studio\\ Pro",
+					"$(PROJECT_DIR)/Songwriter\\ Studio\\ Pro",
+					"$(PROJECT_DIR)/Songwriter\\ Studio\\ Pro",
+					"$(PROJECT_DIR)/Songwriter\\ Studio\\ Pro",
+					"$(PROJECT_DIR)/Frameworks/SSPWaveView",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				INFOPLIST_FILE = "Songwriter Studio Pro/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.modestasvalauskas.Songwriter-Studio-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Songwriter Studio Pro/Songwriter Studio Pro-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		46ED7C2C1E96EAE400576C70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = N7342S7C7W;
+				INFOPLIST_FILE = SongwriterStudioProTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modestasvalauskas.SongwriterStudioProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SongwriterStudioPro.app/SongwriterStudioPro";
+			};
+			name = Debug;
+		};
+		46ED7C2D1E96EAE400576C70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = N7342S7C7W;
+				INFOPLIST_FILE = SongwriterStudioProTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modestasvalauskas.SongwriterStudioProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SongwriterStudioPro.app/SongwriterStudioPro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46B904521E82FCA90019D20A /* Build configuration list for PBXProject "SongwriterStudioPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B9047D1E82FCA90019D20A /* Debug */,
+				46B9047E1E82FCA90019D20A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46B9047F1E82FCA90019D20A /* Build configuration list for PBXNativeTarget "SongwriterStudioPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B904801E82FCA90019D20A /* Debug */,
+				46B904811E82FCA90019D20A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46ED7C2B1E96EAE400576C70 /* Build configuration list for PBXNativeTarget "SongwriterStudioProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46ED7C2C1E96EAE400576C70 /* Debug */,
+				46ED7C2D1E96EAE400576C70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46B9044F1E82FCA90019D20A /* Project object */;
+}

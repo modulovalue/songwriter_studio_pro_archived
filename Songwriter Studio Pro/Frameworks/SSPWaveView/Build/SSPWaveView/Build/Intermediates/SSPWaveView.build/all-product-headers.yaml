@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/valauskasmodestas/Desktop/SSPWaveView/Build/SSPWaveView/Build/Products/Debug-iphonesimulator/SSPWaveView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SSPWaveView-Swift.h",
+          'external-contents': "/Users/valauskasmodestas/Desktop/SSPWaveView/Build/SSPWaveView/Build/Products/Debug-iphonesimulator/SSPWaveView.framework/Headers/SSPWaveView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SSPWaveView.h",
+          'external-contents': "/Users/valauskasmodestas/Desktop/SSPWaveView/SSPWaveView/SSPWaveView.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/valauskasmodestas/Desktop/SSPWaveView/Build/SSPWaveView/Build/Products/Debug-iphonesimulator/SSPWaveView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/valauskasmodestas/Desktop/SSPWaveView/Build/SSPWaveView/Build/Intermediates/SSPWaveView.build/Debug-iphonesimulator/SSPWaveView.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

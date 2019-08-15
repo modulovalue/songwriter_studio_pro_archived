@@ -1,0 +1,6 @@
+framework module Pods_SongwriterStudioPro {
+  umbrella header "Pods-SongwriterStudioPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

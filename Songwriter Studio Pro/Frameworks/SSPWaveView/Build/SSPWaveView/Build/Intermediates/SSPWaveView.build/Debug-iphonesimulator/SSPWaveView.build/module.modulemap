@@ -1,0 +1,10 @@
+framework module SSPWaveView {
+  umbrella header "SSPWaveView.h"
+
+  export *
+  module * { export * }
+}
+
+module SSPWaveView.Swift {
+    header "SSPWaveView-Swift.h"
+}
